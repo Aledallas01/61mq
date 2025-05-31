@@ -21,7 +21,7 @@ const ProductCarousel = () => {
             <div className="flip-card">
               <div className="flip-inner">
                 <div className="flip-front">
-                  <img src={`/img/${product.image}`} alt={product.name} className="w-full h-full object-cover rounded-lg" />
+                  <img src={`../assets/images/${product.image}`} alt={product.name} className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="flip-back">
                   <h3>{product.name}</h3>
