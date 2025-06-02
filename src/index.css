@@ -113,7 +113,7 @@ nav a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #178541;
+  background-color: #50cc50;
   transition: width 0.3s ease;
 }
 
@@ -124,13 +124,13 @@ nav a:hover::after {
 
 @media (max-width: 900px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
   nav ul {
     gap: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 2px;
   }
 
@@ -139,11 +139,6 @@ nav a:hover::after {
     border-radius: 5px;
     background-color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
-  }
-
-  nav li {
-    flex-direction: row;
-    gap: 0.75rem;
   }
 
 
@@ -568,6 +563,9 @@ section {
   width: 100%;
 }
 
+
+/* Prodotti in Evidenza */
+
 .evidenza-section {
   padding: 3rem 1rem;
   background-color: #c7c7c7;
@@ -615,4 +613,79 @@ section {
   margin-top: 0.5rem;
   font-weight: bold;
   color: #242424;
+}
+
+/* Novità in Negozio */
+
+.novità-section {
+  padding: 3rem 1rem;
+  background-color: #c7c7c7;
+}
+
+.novità-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.novità-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.novità-card {
+  background-color: #adb9ad;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.novità-card:hover {
+  transform: translateY(-5px);
+}
+
+.novità-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.novità-info {
+  padding: 1rem;
+  color: #000000;
+}
+
+.novità-price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #242424;
+}
+
+.recensioni-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recensione {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.testo {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.autore,
+.fonte {
+  font-size: 0.875rem;
+  color: #555;
 }

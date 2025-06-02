@@ -2,9 +2,11 @@
 
 import React from "react";
 import products from "../data/products.json";
+import ReviewsSection from '../components/ReviewsSection';
 
 export default function Home() {
   const prodottiInEvidenza = products.filter((p) => p.evidenza === true);
+  const NovitàInNegozio = products.filter((p) => p.new === true);
 
   return (
     <main>
@@ -20,6 +22,27 @@ export default function Home() {
           Il negozio si distingue per il design ricercato e l'attenzione alla
           qualità, offrendo sia occhiali da vista che da sole.
         </p>
+      </section>
+
+      {/* Novità in Negozio */}
+      <section id="novità" className="novità-section">
+        <h2>Novità in Negozio</h2>
+        <div className="novità-grid">
+          {NovitàInNegozio.map((product) => (
+            <div key={product.id} className="novità-card">
+              <img
+                src={`/assets/products/${product.image}`}
+                alt={product.name}
+                className="novità-img"
+              />
+              <div className="novità-info">
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <p className="novità-price">€{product.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Prodotti in Evidenza */}
