@@ -25,15 +25,15 @@ export default function ProductCarousel() {
         freeMode={true}
         grabCursor={true}
         allowTouchMove={false}
-        className="w-full px-4"
+        className="w-full h-72 px-4"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id} className="group perspective">
+          <SwiperSlide key={product.id} className="group perspective h-full">
             <div className="relative w-full h-72 transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
               {/* Fronte */}
               <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src={`/assets/products/${product.image}`}
+                  src={`../../public/assets/products/${product.image}`}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
