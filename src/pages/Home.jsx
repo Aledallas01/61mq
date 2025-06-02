@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 
 import React from "react";
-import ProductCarousel from "../components/ProductCarousel";
+import ProductCarousel from "../components/ProductCarousel.jsx";
 
 export default function Home() {
   return (
