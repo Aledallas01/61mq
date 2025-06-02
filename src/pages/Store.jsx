@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 export default function Store() {
   // estrai categorie uniche
   const categories = Array.from(new Set(products.map((p) => p.category)));
+  
+  // Filtra i prodotti in evidenza
+  const prodottiInEvidenza = products.filter(p => p.evidenza === true);
 
   return (
     <div className="store-page">
