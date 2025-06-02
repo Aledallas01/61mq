@@ -16,7 +16,7 @@ export default function ProductCarousel() {
       {products.map((product) => (
         <div key={product.id} className="border p-4 m-2">
           <img
-            src={`/assets/images/${product.image}`}
+            src={`/assets/products/${product.image}`}
             alt={product.name}
             className="h-32"
           />
