@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import products from "../data/products.json";
 
@@ -12,42 +13,16 @@ export default function ProductCarousel() {
         Alcuni dei nostri prodotti
       </h2>
 
-      <Swiper
-        modules={[Autoplay, Pagination, EffectCoverflow]}
-        spaceBetween={20}
-        slidesPerView={5}
-        loop={true}
-        speed={3000}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        freeMode={true}
-        grabCursor={true}
-        allowTouchMove={false}
-        className="w-full h-72 px-4"
-      >
-        {products.map((product) => (
-          <SwiperSlide key={product.id} className="group perspective h-full">
-            <div className="relative w-full h-72 transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
-              {/* Fronte */}
-              <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={`../../public/assets/products/${product.image}`}
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Retro */}
-              <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary text-white p-4 flex flex-col justify-center items-center rounded-xl">
-                <h3 className="text-xl font-bold">{product.name}</h3>
-                <p className="text-sm mt-2">{product.description}</p>
-                <p className="text-lg font-semibold mt-4">€{product.price}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {products.map((product) => (
+        <div key={product.id} className="border p-4 m-2">
+          <img
+            src={`/assets/images/${product.image}`}
+            alt={product.name}
+            className="h-32"
+          />
+          <p>{product.name}</p>
+        </div>
+      ))}
     </section>
   );
 }
