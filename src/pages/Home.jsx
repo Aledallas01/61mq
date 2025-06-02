@@ -22,9 +22,9 @@ export default function Home() {
         </section>
 
         {/* Prodotti */}
-        <section id="prodotti">
-          <ProductCarousel />
-        </section>
+        <div>
+          <ProductsCarousel />
+        </div>
       </main>
     </>
   );
