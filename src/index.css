@@ -131,11 +131,11 @@ nav a:hover::after {
   nav ul {
     gap: 0.5rem;
     margin-top: 1rem;
-    margin-left: 5px;
+    margin-left: 2px;
   }
 
   nav a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     background-color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
