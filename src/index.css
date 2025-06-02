@@ -92,7 +92,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-top: 3px;
 }
 
 nav a {
@@ -131,7 +130,7 @@ nav a:hover::after {
 
   nav ul {
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: 2px;
   }
 
