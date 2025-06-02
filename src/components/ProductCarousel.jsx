@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow } from "swiper/modules";
 import products from "../data/products.json";
 
 export default function ProductCarousel() {
@@ -13,7 +13,7 @@ export default function ProductCarousel() {
       </h2>
 
       <Swiper
-        modules={[EffectCoverflow]}
+        modules={[Autoplay, Pagination, EffectCoverflow]}
         spaceBetween={20}
         slidesPerView={5}
         loop={true}
