@@ -8,8 +8,8 @@ export default function Navbar() {
         <img src={logo} alt="Logo" />
         <h2>61MetriQuadri</h2>
       </div>
-      <nav>
-        <ul>
+      <nav className="footer-nav">
+        <ul className="footer-nav__list">
           <li>
             <Link to="/">
               <i className="fas fa-house" /> Home
@@ -22,7 +22,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/prodotti">
-              <i className="fas fa-shopping-cart" /> Prodotti
+              <i className="fas fa-shopping-cart" /> Store
             </Link>
           </li>
         </ul>
