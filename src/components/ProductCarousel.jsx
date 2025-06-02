@@ -1,48 +1,44 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import { EffectCoverflow } from "swiper/modules";
-import products from "../data/products.json";
+// src/components/ProductsCarousel.jsx
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-export default function ProductCarousel() {
+import products from '../data/products.json';
+
+export default function ProductsCarousel() {
   return (
-    <section id="prodotti" className="py-12">
-      <h2 className="text-center text-3xl font-bold mb-8 text-primary">
-        Alcuni dei nostri prodotti
-      </h2>
+    <section className="py-10 px-4 bg-gray-900 text-white">
+      <h2 className="text-3xl font-bold text-center mb-8">Alcuni dei nostri prodotti</h2>
 
       <Swiper
-        modules={[EffectCoverflow]}
-        spaceBetween={20}
+        modules={[Navigation]}
+        navigation
+        spaceBetween={16}
         slidesPerView={5}
-        loop={true}
-        speed={3000} // più alto = più lento e fluido
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        freeMode={true}
-        grabCursor={true}
-        allowTouchMove={false}
-        className="w-full px-4"
+        loop
+        className="w-full"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id} className="group perspective">
-            <div className="relative w-full h-72 transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
-              {/* Fronte */}
-              <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={`/assets/products/${product.image}`}
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Retro */}
-              <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary text-white p-4 flex flex-col justify-center items-center rounded-xl">
-                <h3 className="text-xl font-bold">{product.name}</h3>
-                <p className="text-sm mt-2">{product.description}</p>
-                <p className="text-lg font-semibold mt-4">€{product.price}</p>
+          <SwiperSlide key={product.id}>
+            <div className="relative group w-full h-64 perspective">
+              <div className="w-full h-full transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-180">
+                {/* Lato Front */}
+                <div className="absolute w-full h-full backface-hidden bg-gray-800 rounded-lg overflow-hidden shadow-md">
+                  <img
+                    src={`/assets/products/${product.image}`}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Lato Back */}
+                <div className="absolute w-full h-full rotate-y-180 backface-hidden bg-gray-700 rounded-lg flex flex-col items-center justify-center p-4 text-center shadow-md">
+                  <h3 className="text-lg font-semibold">{product.name}</h3>
+                  <p className="text-sm text-gray-300">{product.description}</p>
+                  <span className="mt-2 text-green-400 font-bold">{product.price.toFixed(2)} €</span>
+                </div>
               </div>
             </div>
           </SwiperSlide>
