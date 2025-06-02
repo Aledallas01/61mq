@@ -354,8 +354,7 @@ section {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: #50ca50;
-  box-shadow: 0 0 8px #8a2be2;
+  background: #242424;
   border-radius: 2px;
 }
 
@@ -379,7 +378,7 @@ section {
 
 #valori .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px #50ca50;
+  box-shadow: 0 0 15px #50ca97;
 }
 
 #valori .card i {
@@ -391,7 +390,7 @@ section {
 #valori .card span {
   display: block;
   font-size: 1.1rem;
-  color: #cbbcff;
+  color: #000000;
   margin-bottom: 0.6rem;
 }
 
