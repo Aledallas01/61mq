@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import products from "../data/products.json";
 
-
 export default function ProductCarousel() {
   return (
     <section id="prodotti" className="py-12">
@@ -18,7 +17,7 @@ export default function ProductCarousel() {
         spaceBetween={20}
         slidesPerView={5}
         loop={true}
-        speed={3000} // più alto = più lento e fluido
+        speed={3000}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -30,11 +29,11 @@ export default function ProductCarousel() {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="group perspective">
-            <div className="relative w-full h-72 transition-transform duration-500 transform-style group-hover:rotate-y-180">
+            <div className="relative w-full h-72 transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
               {/* Fronte */}
               <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src={`/assets/products/${product.image}`}
+                  src={`/assets/images/${product.image}`}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
@@ -49,9 +48,6 @@ export default function ProductCarousel() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <script>
-        console.log(products);
-      </script>
     </section>
   );
 }
