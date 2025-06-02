@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+
+Colori
+
+BackGround: #bacaba
+Sfondo Accentuato: #cacaca
+Testi: #000000
+
+#b0c9b0
+
+*/
 
 /* RESET BASE */
 * {
@@ -13,7 +24,7 @@
 /* TEMA BASE */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #c7c7c7;
+  background-color: #bacaba;
   color: #161616;
   line-height: 1.6;
   overflow-x: hidden;
@@ -356,7 +367,7 @@ section {
 #storia,
 #missione,
 #valori {
-  background-color: #cacaca;
+  background-color: #bacaba;
   padding: 4rem 2rem;
   color: #000000;
 }
@@ -408,8 +419,8 @@ section {
 }
 
 #valori .card {
-  background-color: #cacaca;
-  border: 2px solid #81ca81;
+  background-color: #b0c9b0;
+  border: 2px solid #202020;
   border-radius: 12px;
   padding: 1.8rem;
   text-align: center;
@@ -423,9 +434,8 @@ section {
 
 #valori .card i {
   font-size: 2.5rem;
-  color: #50ca50;
+  color: #000000;
   margin-bottom: 1rem;
-  border: #000000 1px solid;
 }
 
 #valori .card span {
@@ -437,7 +447,7 @@ section {
 
 #valori .card p {
   font-size: 0.95rem;
-  color: #ddd;
+  color: #282828;
   line-height: 1.6;
 }
 
@@ -499,7 +509,7 @@ section {
 .store-page {
   position: relative;
   min-height: 100vh;
-  background-color: #cacaca;
+  background-color: #bacaba;
   color: #000000;
 }
 
@@ -607,7 +617,7 @@ section {
 
 .evidenza-section {
   padding: 3rem 1rem;
-  background-color: #cacaca;
+  background-color: #bacaba;
 }
 
 .evidenza-section h2 {
