@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 
 import React from "react";
-import ProductsCarousel from "../components/ProductsCarousel";
+import ProductCarousel from "../components/ProductCarousel";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
 
         {/* Prodotti */}
         <div className="min-h-screen bg-gray-900 text-white">
-          <ProductsCarousel />
+          <ProductCarousel />
         </div>
       </main>
     </>
