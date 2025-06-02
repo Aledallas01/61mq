@@ -5,7 +5,9 @@
     "price": 9.99,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale2",
@@ -13,7 +15,9 @@
     "price": 4.99,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale3",
@@ -21,7 +25,9 @@
     "price": 2.49,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale4",
@@ -29,7 +35,9 @@
     "price": 14.99,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale5",
@@ -37,7 +45,9 @@
     "price": 7.99,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale6",
@@ -45,51 +55,59 @@
     "price": 4.49,
     "category": "Marca1",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
-
-
-
-
 
   {
     "id": "occhiale11",
     "name": "occhiale",
-    "price": 8.00,
+    "price": 8.0,
     "category": "Marca2",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale12",
     "name": "occhiale",
-    "price": 18.00,
+    "price": 18.0,
     "category": "Marca2",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "prison-aethero",
     "name": "occhiale",
-    "price": 27.00,
+    "price": 27.0,
     "category": "Marca2",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale13",
     "name": "occhiale",
-    "price": 40.00,
+    "price": 40.0,
     "category": "Marca2",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   },
   {
     "id": "occhiale14",
     "name": "occhiale",
-    "price": 60.00,
+    "price": 60.0,
     "category": "Marca2",
     "image": "placeholder.png",
-    "description": "Occhiale di Esempio"
+    "description": "Occhiale di Esempio",
+    "evidenza": false,
+    "new": false
   }
 ]
