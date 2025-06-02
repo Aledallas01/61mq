@@ -33,7 +33,7 @@ export default function ProductCarousel() {
               {/* Fronte */}
               <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src={`/assets/images/${product.image}`}
+                  src={`/assets/products/${product.image}`}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
