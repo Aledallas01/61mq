@@ -141,6 +141,11 @@ nav a:hover::after {
     transition: background-color 0.3s, color 0.3s;
   }
 
+  nav li {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
 
 }
 
@@ -309,7 +314,6 @@ section {
 .hero-buttons .btn i {
   font-size: 1.2rem;
   color: #fff;
-  /* o #8a2be2 se preferisci il viola */
   margin-right: 0.5rem;
 }
 
