@@ -1,6 +1,6 @@
 [
   {
-    "id": "occhiale1",
+    "id": "occhiale1.1",
     "name": "occhiale",
     "price": 9.99,
     "category": "Marca1",
@@ -10,17 +10,17 @@
     "new": false
   },
   {
-    "id": "occhiale2",
+    "id": "occhiale1.2",
     "name": "occhiale",
     "price": 4.99,
     "category": "Marca1",
     "image": "placeholder.png",
     "description": "Occhiale di Esempio",
-    "evidenza": false,
+    "evidenza": true,
     "new": false
   },
   {
-    "id": "occhiale3",
+    "id": "occhiale1.3",
     "name": "occhiale",
     "price": 2.49,
     "category": "Marca1",
@@ -30,17 +30,17 @@
     "new": false
   },
   {
-    "id": "occhiale4",
+    "id": "occhiale1.4",
     "name": "occhiale",
     "price": 14.99,
     "category": "Marca1",
     "image": "placeholder.png",
     "description": "Occhiale di Esempio",
-    "evidenza": false,
+    "evidenza": true,
     "new": false
   },
   {
-    "id": "occhiale5",
+    "id": "occhiale1.5",
     "name": "occhiale",
     "price": 7.99,
     "category": "Marca1",
@@ -50,7 +50,7 @@
     "new": false
   },
   {
-    "id": "occhiale6",
+    "id": "occhiale1.6",
     "name": "occhiale",
     "price": 4.49,
     "category": "Marca1",
@@ -60,8 +60,11 @@
     "new": false
   },
 
+
+
+
   {
-    "id": "occhiale11",
+    "id": "occhiale2.1",
     "name": "occhiale",
     "price": 8.0,
     "category": "Marca2",
@@ -71,17 +74,17 @@
     "new": false
   },
   {
-    "id": "occhiale12",
+    "id": "occhiale2.2",
     "name": "occhiale",
     "price": 18.0,
     "category": "Marca2",
     "image": "placeholder.png",
     "description": "Occhiale di Esempio",
-    "evidenza": false,
+    "evidenza": true,
     "new": false
   },
   {
-    "id": "prison-aethero",
+    "id": "occhiale2.3",
     "name": "occhiale",
     "price": 27.0,
     "category": "Marca2",
@@ -91,7 +94,7 @@
     "new": false
   },
   {
-    "id": "occhiale13",
+    "id": "occhiale2.4",
     "name": "occhiale",
     "price": 40.0,
     "category": "Marca2",
@@ -101,13 +104,13 @@
     "new": false
   },
   {
-    "id": "occhiale14",
+    "id": "occhiale2.5",
     "name": "occhiale",
     "price": 60.0,
     "category": "Marca2",
     "image": "placeholder.png",
     "description": "Occhiale di Esempio",
-    "evidenza": false,
+    "evidenza": true,
     "new": false
   }
 ]
