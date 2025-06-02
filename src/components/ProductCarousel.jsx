@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import products from "../data/products.json";
 
+
 export default function ProductCarousel() {
   return (
     <section id="prodotti" className="py-12">
@@ -29,7 +30,7 @@ export default function ProductCarousel() {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id} className="group perspective">
-            <div className="relative w-full h-72 transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
+            <div className="relative w-full h-72 transition-transform duration-500 transform-style group-hover:rotate-y-180">
               {/* Fronte */}
               <div className="absolute w-full h-full backface-hidden rounded-xl overflow-hidden shadow-lg">
                 <img

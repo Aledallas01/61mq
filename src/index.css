@@ -620,3 +620,7 @@ section {
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+.group-hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
