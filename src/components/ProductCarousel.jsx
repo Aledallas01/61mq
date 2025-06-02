@@ -49,6 +49,9 @@ export default function ProductCarousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <script>
+        console.log(products);
+      </script>
     </section>
   );
 }
