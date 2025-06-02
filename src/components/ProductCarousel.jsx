@@ -20,7 +20,7 @@ export default function ProductCarousel() {
         speed={3000} // più alto = più lento e fluido
         autoplay={{
           delay: 0,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         freeMode={true}
         grabCursor={true}
