@@ -6,7 +6,7 @@
 
 Colori
 
-BackGround: #bacaba
+BackGround: #c7c7c7
 Sfondo Accentuato: #cacaca
 Testi: #000000
 
@@ -24,7 +24,7 @@ Testi: #000000
 /* TEMA BASE */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #bacaba;
+  background-color: #c7c7c7;
   color: #161616;
   line-height: 1.6;
   overflow-x: hidden;
@@ -179,56 +179,6 @@ section {
   margin-bottom: 2rem;
 }
 
-#prodotti .mode-section {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5rem;
-  padding: 1.5rem;
-  background-color: #bacaba;
-  border-left: 10px solid #63bb85;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  animation: fadeInUp 1.3s ease;
-}
-
-#prodotti .mode-image {
-  flex: 0 0 40%;
-  border-radius: 17px;
-  max-width: 30%;
-  max-height: 30%;
-  margin: 2rem;
-
-}
-
-#prodotti .mode-text {
-  flex: 1 1 60%;
-}
-
-/* Mobile: testo sopra, immagine sotto */
-@media (max-width: 900px) {
-  #prodotti .mode-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #prodotti .mode-text {
-    order: 0;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  #prodotti .mode-image {
-    order: 1;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 /* CONTENUTO TESTUALE */
 .container {
   max-width: 1000px;
@@ -367,7 +317,7 @@ section {
 #storia,
 #missione,
 #valori {
-  background-color: #bacaba;
+  background-color: #c7c7c7;
   padding: 4rem 2rem;
   color: #000000;
 }
@@ -509,7 +459,7 @@ section {
 .store-page {
   position: relative;
   min-height: 100vh;
-  background-color: #bacaba;
+  background-color: #c7c7c7;
   color: #000000;
 }
 
@@ -526,8 +476,8 @@ section {
 .category-title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #d9b3ff;
-  border-bottom: 2px solid #000000;
+  color: #000000;
+  border-bottom: 2px solid #242424;
   display: inline-block;
   padding-bottom: 0.2rem;
 }
@@ -617,7 +567,7 @@ section {
 
 .evidenza-section {
   padding: 3rem 1rem;
-  background-color: #bacaba;
+  background-color: #c7c7c7;
 }
 
 .evidenza-section h2 {
