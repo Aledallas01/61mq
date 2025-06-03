@@ -397,6 +397,7 @@ section {
 
 /* Responsive tweak */
 @media (max-width: 600px) {
+
   #storia p,
   #missione p {
     font-size: 1rem;
@@ -684,11 +685,10 @@ section {
   color: #555;
 }
 
-/* index.css */
 .servizi-section {
   padding: 4rem 1rem;
-  background-color: #111827; /* dark background */
-  color: #ffffff;
+  background-color: #c7c7c7;
+  color: #000000;
   text-align: center;
 }
 
@@ -704,7 +704,7 @@ section {
 }
 
 .servizio-box {
-  background-color: #1f2937;
+  background-color: #cacaca;
   padding: 2rem;
   border-radius: 1rem;
   transition: transform 0.3s ease;
@@ -717,10 +717,32 @@ section {
 .servizio-box i {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #38bdf8; /* accento pastello azzurro */
+  color: #000000;
+  /* accento pastello azzurro */
 }
 
 .servizio-box h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+.contatti-section {
+  padding: 2rem 1rem;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.map-container {
+  border: 2px solid #2e2e2e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.info-contatti a {
+  color: #9ee493;
+  text-decoration: none;
+}
+
+.info-contatti a:hover {
+  text-decoration: underline;
 }
