@@ -5,7 +5,7 @@ export default function Evidenza() {
   const prodottiInEvidenza = products.filter((p) => p.evidenza === true);
   return (
     <section id="evidenza" className="evidenza-section">
-      <h2 className="fas fa-fire">Prodotti in Evidenza</h2>
+      <h2>Prodotti in Evidenza</h2>
       <div className="evidenza-grid">
         {prodottiInEvidenza.map((product) => (
           <div key={product.id} className="evidenza-card">

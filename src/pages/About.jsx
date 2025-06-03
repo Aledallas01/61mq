@@ -46,7 +46,7 @@ export default function About() {
         </section>
 
         {/* Mission */}
-        <section id="mission">
+        <section id="missione">
           <div className="container">
             <h2 className="section-title">
               <i className="fas fa-bullseye" /> La Nostra Missione

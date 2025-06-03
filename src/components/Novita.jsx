@@ -6,7 +6,7 @@ export default function Novita() {
 
   return (
     <section id="novità" className="novità-section">
-      <h2 className="fas fa-sparkles">Novità in Negozio</h2>
+      <h2>Novità in Negozio</h2>
       <div className="novità-grid">
         {NovitàInNegozio.map((product) => (
           <div key={product.id} className="novità-card">

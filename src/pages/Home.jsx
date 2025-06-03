@@ -29,7 +29,7 @@ export default function Home() {
       <Servizi />
 
       {/* Chi Siamo */}
-      <section>
+      <section className="container" id="about-hero">
         <h1>
           <i className="fas fa-info-circle" /> Chi Siamo
         </h1>

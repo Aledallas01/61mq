@@ -312,7 +312,6 @@ section {
 #storia,
 #missione,
 #valori {
-  background-color: #c7c7c7;
   padding: 4rem 2rem;
   color: #000000;
 }
@@ -373,7 +372,6 @@ section {
 
 #valori .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px #50ca97;
 }
 
 #valori .card i {
@@ -453,7 +451,6 @@ section {
 .store-page {
   position: relative;
   min-height: 100vh;
-  background-color: #c7c7c7;
   color: #000000;
 }
 
@@ -563,7 +560,6 @@ section {
 
 .evidenza-section {
   padding: 3rem 1rem;
-  background-color: #c7c7c7;
 }
 
 .evidenza-section h2 {
@@ -582,7 +578,7 @@ section {
 }
 
 .evidenza-card {
-  background-color: #adb9ad;
+  background-color: #c7c1c1;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -614,7 +610,6 @@ section {
 
 .novità-section {
   padding: 3rem 1rem;
-  background-color: #c7c7c7;
 }
 
 .novità-section h2 {
@@ -633,7 +628,7 @@ section {
 }
 
 .novità-card {
-  background-color: #adb9ad;
+  background-color: #c7c1c1;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -687,7 +682,6 @@ section {
 
 .servizi-section {
   padding: 4rem 1rem;
-  background-color: #c7c7c7;
   color: #000000;
   text-align: center;
 }
@@ -704,7 +698,7 @@ section {
 }
 
 .servizio-box {
-  background-color: #cacaca;
+  background-color: #c7c1c1;
   padding: 2rem;
   border-radius: 1rem;
   transition: transform 0.3s ease;
@@ -718,7 +712,6 @@ section {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #000000;
-  /* accento pastello azzurro */
 }
 
 .servizio-box h3 {
@@ -726,23 +719,42 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.contatti-section {
-  padding: 2rem 1rem;
-  background-color: #1f1f1f;
-  color: white;
-}
-
 .map-container {
-  border: 2px solid #2e2e2e;
+  border: 2px solid #242424;
   border-radius: 12px;
   overflow: hidden;
 }
 
 .info-contatti a {
-  color: #9ee493;
+  margin: 5px;
+  width: 5%;
+  height: 5%;
+  color: #000000;
   text-decoration: none;
 }
 
 .info-contatti a:hover {
   text-decoration: underline;
+}
+
+.info-contatti li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: #000000;
+  /* testo grigio chiaro */
+  font-size: 1rem;
+  border-bottom: 1px solid #000000;
+  transition: color 0.3s ease;
+}
+
+.info-contatti li:hover {
+  color: #282828;
+}
+
+.info-contatti li i {
+  min-width: 1.25rem;
+  color: #000000;
+  /* verde pastello */
 }
