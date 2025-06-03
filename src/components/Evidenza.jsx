@@ -1,4 +1,5 @@
 import React from "react";
+import products from "../data/products.json";
 
 export default function Evidenza() {
   const prodottiInEvidenza = products.filter((p) => p.evidenza === true);
