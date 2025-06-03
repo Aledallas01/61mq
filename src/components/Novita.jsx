@@ -1,4 +1,5 @@
 import React from "react";
+import products from "../data/products.json";
 
 export default function Novita() {
   const NovitàInNegozio = products.filter((p) => p.new === true);
