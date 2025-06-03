@@ -141,6 +141,20 @@ nav a:hover::after {
   }
 }
 
+/* SEZIONI */
+section {
+  padding: 4rem 2rem;
+  animation: fadeInUp 1s ease;
+  border-top: 1px solid #1f2937;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -148,6 +162,7 @@ nav a:hover::after {
   background: linear-gradient(0deg, #c7c7c7, #bacaba);
   color: #000000;
   animation: fadeInUp 1.7s ease;
+  border-bottom: none;
 }
 
 .hero h1 {
@@ -161,20 +176,6 @@ nav a:hover::after {
   max-width: 700px;
   margin: 0 auto 2rem;
   animation: fadeInUp 1.8s ease;
-}
-
-/* SEZIONI */
-section {
-  padding: 4rem 2rem;
-  animation: fadeInUp 1s ease;
-  border-top: 1px solid #1f2937;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 /* CONTENUTO TESTUALE */
@@ -722,7 +723,7 @@ section {
 
 .contatti-section {
   padding: 3rem 1.5rem;
-  border-top: 1px solid #1f2937;
+  border-bottom: 1px solid #1f2937;
   color: #000000;
 }
 
