@@ -23,7 +23,7 @@ Testi: #000000
 
 /* TEMA BASE */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #c7c7c7;
   color: #161616;
   line-height: 1.6;
@@ -121,7 +121,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-
 @media (max-width: 900px) {
   header {
     flex-direction: row;
@@ -140,8 +139,6 @@ nav a:hover::after {
     background-color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
   }
-
-
 }
 
 /* HERO */
@@ -288,7 +285,6 @@ section {
   transition: background 0.3s, transform 0.2s;
 }
 
-
 @media (max-width: 900px) {
   .hero-buttons {
     flex-direction: column;
@@ -401,7 +397,6 @@ section {
 
 /* Responsive tweak */
 @media (max-width: 600px) {
-
   #storia p,
   #missione p {
     font-size: 1rem;
@@ -563,7 +558,6 @@ section {
   width: 100%;
 }
 
-
 /* Prodotti in Evidenza */
 
 .evidenza-section {
@@ -688,4 +682,45 @@ section {
 .fonte {
   font-size: 0.875rem;
   color: #555;
+}
+
+/* index.css */
+.servizi-section {
+  padding: 4rem 1rem;
+  background-color: #111827; /* dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.servizi-titolo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servizi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.servizio-box {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.servizio-box:hover {
+  transform: translateY(-5px);
+}
+
+.servizio-box i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #38bdf8; /* accento pastello azzurro */
+}
+
+.servizio-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
