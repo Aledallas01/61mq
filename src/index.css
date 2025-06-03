@@ -757,9 +757,9 @@ section {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #2d2d2d;
   font-size: 1rem;
   transition: color 0.3s ease;
+  margin-bottom: 5px;
 }
 
 .info-contatti li:last-child {
@@ -780,7 +780,9 @@ section {
 }
 
 .info-contatti i {
-  min-width: 1.25rem;
+  align-items: center;
+  margin: 3px;
+  min-width: 3rem;
   color: #000000;
   font-size: 1.2rem;
 }
