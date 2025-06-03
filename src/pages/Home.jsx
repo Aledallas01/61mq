@@ -5,7 +5,7 @@ import products from "../data/products.json";
 
 import Servizi from "../components/Servizi.jsx";
 import ProdottiInEvidenza from "../components/Evidenza.jsx";
-import NovitàInNegozio from "../components/novita.jsx";
+import NovitàInNegozio from "../components/Novita.jsx";
 import DoveTrovarci from "../components/DoveTrovarci.jsx";
 
 export default function Home() {
