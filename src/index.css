@@ -167,6 +167,7 @@ nav a:hover::after {
 section {
   padding: 4rem 2rem;
   animation: fadeInUp 1s ease;
+  border-top: 1px solid #1f2937;
 }
 
 .section-title {
@@ -760,10 +761,6 @@ section {
   font-size: 1rem;
   transition: color 0.3s ease;
   margin-bottom: 5px;
-}
-
-.info-contatti li:last-child {
-  border-bottom: none;
 }
 
 .info-contatti li:hover {
