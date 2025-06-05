@@ -37,7 +37,7 @@ export default function ComeTrovarci() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-instagram text-xl">
+              <i className="fas fa-brands fa-instagram text-xl">
                 Seguici su InstaGram
               </i>
             </a>
@@ -46,7 +46,7 @@ export default function ComeTrovarci() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-facebook text-xl">
+              <i className="fas fa-brands fa-facebook text-xl">
                 Seguici su FaceBook
               </i>
             </a>
