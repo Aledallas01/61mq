@@ -483,7 +483,7 @@ section {
 /* --- PRODUCT CARD --- */
 .product-card {
   background-color: #c7c1c1;
-  border: 1px solid #505050;
+  border: 1px solid #505050bb;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
