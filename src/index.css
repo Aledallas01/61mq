@@ -342,8 +342,7 @@ section {
 }
 
 #storia h2::after,
-#missione h2::after,
-#valori h2::after {
+#missione h2::after {
   content: "";
   position: absolute;
   bottom: 0;
