@@ -145,7 +145,6 @@ nav a:hover::after {
 section {
   padding: 4rem 2rem;
   animation: fadeInUp 1s ease;
-  border-top: 1px solid #1f2937;
 }
 
 .section-title {
