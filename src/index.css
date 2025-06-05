@@ -778,9 +778,16 @@ section {
 }
 
 .info-contatti i {
+  display: inline-flex;
   align-items: center;
-  margin: 3px;
-  min-width: 3rem;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
   color: #000000;
   font-size: 1.2rem;
+}
+
+.info-contatti i:hover {
+  color: #242424;
 }
