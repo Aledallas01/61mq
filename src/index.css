@@ -342,7 +342,8 @@ section {
 }
 
 #storia h2::after,
-#missione h2::after {
+#missione h2::after,
+#valori h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -350,7 +351,7 @@ section {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: #242424;
+  background: #303030;
   border-radius: 2px;
 }
 
@@ -470,7 +471,7 @@ section {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #000000;
-  border-bottom: 2px solid #242424;
+  border-bottom: 2px solid #303030;
   display: inline-block;
   padding-bottom: 0.2rem;
 }
@@ -484,7 +485,7 @@ section {
 /* --- PRODUCT CARD --- */
 .product-card {
   background-color: #c7c1c1;
-  border: 1px solid #242424;
+  border: 1px solid #505050;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
