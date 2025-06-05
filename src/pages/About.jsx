@@ -1,5 +1,6 @@
 // src/pages/About.jsx
 import React from "react";
+import DoveTrovarci from "../components/DoveTrovarci.jsx";
 
 import StefanoIMG from "../assets/images/stefano.jpg";
 
@@ -96,6 +97,8 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <DoveTrovarci />
       </main>
     </>
   );

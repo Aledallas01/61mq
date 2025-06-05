@@ -483,8 +483,8 @@ section {
 
 /* --- PRODUCT CARD --- */
 .product-card {
-  background-color: #cacaca;
-  border: 1px solid #b8cfc5;
+  background-color: #c7c1c1;
+  border: 1px solid #242424;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -499,7 +499,7 @@ section {
 }
 
 .product-image {
-  width: 100%;
+  width: 90%;
   padding-top: 66.66%;
   /* 3:2 ratio */
   background-size: cover;
