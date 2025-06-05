@@ -37,18 +37,14 @@ export default function ComeTrovarci() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fas fa-brands fa-instagram text-xl">
-                Seguici su InstaGram
-              </i>
+              <i className="fa-brands fa-instagram text-xl"></i>
             </a>
             <a
               href="https://www.facebook.com/61metriquadri/"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fas fa-brands fa-facebook text-xl">
-                Seguici su FaceBook
-              </i>
+              <i className="fa-brands fa-facebook text-xl"></i>
             </a>
           </li>
         </ul>

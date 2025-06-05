@@ -779,7 +779,6 @@ section {
 
 .info-contatti i {
   align-items: center;
-  flex-direction: column;
   margin: 3px;
   min-width: 3rem;
   color: #000000;
