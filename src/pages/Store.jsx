@@ -1,4 +1,5 @@
 // src/pages/Store.jsx
+
 import React, { useState } from "react";
 import products from "../data/products.json";
 import ProductCard from "../components/ProductCard";
@@ -6,13 +7,11 @@ import ProductModal from "../components/ProductModal";
 
 export default function Store() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-
   const categories = Array.from(new Set(products.map((p) => p.category)));
-  const prodottiInEvidenza = products.filter((p) => p.evidenza === true);
+  const prodottiInEvidenza = products.filter((p) => p.evidenza);
 
   return (
     <div className="store-page">
-      {/* Hero */}
       <section className="hero" id="store-hero">
         <h1>
           <i className="fas fa-shopping-cart" /> Prodotti
@@ -48,7 +47,7 @@ export default function Store() {
         </div>
       </section>
 
-      {/* Tutte le categorie */}
+      {/* Categorie Prodotti */}
       <main className="store-container">
         {categories.map((category) => (
           <section key={category} className="store-category">
@@ -68,7 +67,7 @@ export default function Store() {
         ))}
       </main>
 
-      {/* Modal */}
+      {/* Modale Prodotto */}
       {selectedProduct && (
         <ProductModal
           product={selectedProduct}

@@ -1,4 +1,5 @@
 // src/pages/Home.jsx
+
 import React, { useState } from "react";
 import products from "../data/products.json";
 
@@ -10,6 +11,7 @@ import ProductModal from "../components/ProductModal";
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const prodottiInEvidenza = products.filter((p) => p.evidenza);
 
   return (
     <main>
@@ -50,15 +52,37 @@ export default function Home() {
       </section>
 
       {/* Prodotti in Evidenza */}
-      <ProdottiInEvidenza setSelectedProduct={setSelectedProduct} />
+      <section className="evidenza-section">
+        <h2>Prodotti in Evidenza</h2>
+        <div className="evidenza-grid">
+          {prodottiInEvidenza.map((product) => (
+            <div
+              key={product.id}
+              className="evidenza-card cursor-pointer"
+              onClick={() => setSelectedProduct(product)}
+            >
+              <img
+                src={`/assets/products/${product.image}`}
+                alt={product.name}
+                className="evidenza-img"
+              />
+              <div className="evidenza-info">
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <p className="evidenza-price">€{product.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Novità in Negozio */}
-      <NovitàInNegozio setSelectedProduct={setSelectedProduct} />
+      <NovitàInNegozio />
 
       {/* Dove Trovarci */}
       <DoveTrovarci />
 
-      {/* Modal */}
+      {/* Modale Prodotto */}
       {selectedProduct && (
         <ProductModal
           product={selectedProduct}
