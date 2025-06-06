@@ -1,3 +1,4 @@
+// src/components/ProductModal.jsx
 import React from "react";
 
 export default function ProductModal({ product, onClose }) {
@@ -9,20 +10,19 @@ export default function ProductModal({ product, onClose }) {
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg shadow-lg max-w-lg w-full p-6 relative"
+        className="bg-white dark:bg-gray-900 text-black dark:text-white rounded-lg shadow-lg max-w-md w-full p-6 relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-red-500"
-          aria-label="Chiudi modal"
         >
           &times;
         </button>
 
         {product.image && (
           <img
-            src={product.image}
+            src={`/assets/products/${product.image}`}
             alt={product.name}
             className="w-full h-auto rounded mb-4"
           />
@@ -32,23 +32,22 @@ export default function ProductModal({ product, onClose }) {
 
         {product.price && (
           <p className="mb-1">
-            <span className="font-semibold">Prezzo:</span> €{product.price}
+            <strong>Prezzo:</strong> €{product.price.toFixed(2)}
           </p>
         )}
         {product.description && (
           <p className="mb-1">
-            <span className="font-semibold">Descrizione:</span>{" "}
-            {product.description}
+            <strong>Descrizione:</strong> {product.description}
           </p>
         )}
         {product.material && (
           <p className="mb-1">
-            <span className="font-semibold">Materiale:</span> {product.material}
+            <strong>Materiale:</strong> {product.material}
           </p>
         )}
         {product.category && (
           <p className="mb-1">
-            <span className="font-semibold">Marca:</span> {product.category}
+            <strong>Categoria:</strong> {product.category}
           </p>
         )}
       </div>
