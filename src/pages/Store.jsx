@@ -1,18 +1,18 @@
 // src/pages/Store.jsx
-import React from "react";
+import React, { useState } from "react";
 import products from "../data/products.json";
 import ProductCard from "../components/ProductCard";
-import { Link } from "react-router-dom";
+import ProductModal from "../components/ProductModal";
 
 export default function Store() {
-  // estrai categorie uniche
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   const categories = Array.from(new Set(products.map((p) => p.category)));
-   
-  // Filtra i prodotti in evidenza
   const prodottiInEvidenza = products.filter((p) => p.evidenza === true);
 
   return (
     <div className="store-page">
+      {/* Hero */}
       <section className="hero" id="store-hero">
         <h1>
           <i className="fas fa-shopping-cart" /> Prodotti
@@ -28,7 +28,11 @@ export default function Store() {
         <h2>Prodotti in Evidenza</h2>
         <div className="evidenza-grid">
           {prodottiInEvidenza.map((product) => (
-            <div key={product.id} className="evidenza-card">
+            <div
+              key={product.id}
+              className="evidenza-card cursor-pointer"
+              onClick={() => setSelectedProduct(product)}
+            >
               <img
                 src={`/assets/products/${product.image}`}
                 alt={product.name}
@@ -44,6 +48,7 @@ export default function Store() {
         </div>
       </section>
 
+      {/* Tutte le categorie */}
       <main className="store-container">
         {categories.map((category) => (
           <section key={category} className="store-category">
@@ -52,12 +57,24 @@ export default function Store() {
               {products
                 .filter((p) => p.category === category)
                 .map((prod) => (
-                  <ProductCard key={prod.id} product={prod} />
+                  <ProductCard
+                    key={prod.id}
+                    product={prod}
+                    onClick={() => setSelectedProduct(prod)}
+                  />
                 ))}
             </div>
           </section>
         ))}
       </main>
+
+      {/* Modal */}
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
+      )}
     </div>
   );
 }

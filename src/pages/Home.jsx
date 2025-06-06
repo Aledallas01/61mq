@@ -1,14 +1,16 @@
 // src/pages/Home.jsx
-
-import React from "react";
+import React, { useState } from "react";
 import products from "../data/products.json";
 
 import Servizi from "../components/Servizi.jsx";
 import ProdottiInEvidenza from "../components/Evidenza.jsx";
 import NovitàInNegozio from "../components/Novita.jsx";
 import DoveTrovarci from "../components/DoveTrovarci.jsx";
+import ProductModal from "../components/ProductModal";
 
 export default function Home() {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   return (
     <main>
       {/* Hero */}
@@ -48,13 +50,21 @@ export default function Home() {
       </section>
 
       {/* Prodotti in Evidenza */}
-      <ProdottiInEvidenza />
+      <ProdottiInEvidenza setSelectedProduct={setSelectedProduct} />
 
       {/* Novità in Negozio */}
-      <NovitàInNegozio />
+      <NovitàInNegozio setSelectedProduct={setSelectedProduct} />
 
       {/* Dove Trovarci */}
       <DoveTrovarci />
+
+      {/* Modal */}
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
+      )}
     </main>
   );
 }
