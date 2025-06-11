@@ -33,7 +33,7 @@ export default function Home() {
       <Servizi />
 
       {/* Chi Siamo */}
-      <section className="container" id="about-hero">
+      <section className="light-container container" id="about-hero">
         <h1>
           <i className="fas fa-info-circle" /> Chi Siamo
         </h1>
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Prodotti in Evidenza */}
-      <section className="evidenza-section">
+      <section className="light-container evidenza-section">
         <h2>Prodotti in Evidenza</h2>
         <div className="evidenza-grid">
           {prodottiInEvidenza.map((product) => (

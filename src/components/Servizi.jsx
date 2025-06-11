@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Servizi() {
   return (
-    <section id="servizi" className="servizi-section">
+    <section id="servizi" className="light-container servizi-section">
       <div className="container">
         <h2 className="servizi-titolo">
           <i className="fa-solid fa-glasses"></i> I Nostri Servizi

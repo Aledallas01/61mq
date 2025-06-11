@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ComeTrovarci() {
   return (
-    <section id="contatti" className="contatti-section">
+    <section id="contatti" className="light-container contatti-section">
       <h2 className="text-3xl font-bold mb-6">Vieni a trovarci</h2>
 
       <div className="map-container mb-6">

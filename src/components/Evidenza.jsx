@@ -8,7 +8,7 @@ export default function Evidenza() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <section id="evidenza" className="evidenza-section">
+    <section id="evidenza" className="light-container evidenza-section">
       <h2>Prodotti in Evidenza</h2>
       <div className="evidenza-grid">
         {prodottiInEvidenza.map((product) => (

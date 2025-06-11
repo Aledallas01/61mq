@@ -28,7 +28,7 @@ export default function About() {
         </section>
 
         {/* Storia */}
-        <section id="storia">
+        <section id="storia" className="light-container">
           <div className="container">
             <h2 className="section-title">
               <i className="fas fa-book-open" /> La Nostra Storia
@@ -47,7 +47,7 @@ export default function About() {
         </section>
 
         {/* Mission */}
-        <section id="missione">
+        <section id="missione" className="light-container">
           <div className="container">
             <h2 className="section-title">
               <i className="fas fa-bullseye" /> La Nostra Missione
@@ -64,7 +64,7 @@ export default function About() {
         </section>
 
         {/* Valori */}
-        <section id="valori">
+        <section id="valori" className="light-container">
           <div className="container">
             <h2 className="section-title">
               <i className="fas fa-heart" /> I Nostri Valori

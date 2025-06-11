@@ -23,7 +23,7 @@ export default function Store() {
       </section>
 
       {/* Prodotti in Evidenza */}
-      <section id="evidenza" className="evidenza-section">
+      <section id="evidenza" className="light-container evidenza-section">
         <h2>Prodotti in Evidenza</h2>
         <div className="evidenza-grid">
           {prodottiInEvidenza.map((product) => (
@@ -48,7 +48,7 @@ export default function Store() {
       </section>
 
       {/* Categorie Prodotti */}
-      <main className="store-container">
+      <main className="light-container store-container">
         {categories.map((category) => (
           <section key={category} className="store-category">
             <h2 className="category-title">{category}</h2>

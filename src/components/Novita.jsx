@@ -8,7 +8,7 @@ export default function Novita() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <section id="novità" className="novità-section">
+    <section id="novità" className="light-container novità-section">
       <h2>Novità in Negozio</h2>
       <div className="novità-grid">
         {novità.map((product) => (
