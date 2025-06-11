@@ -164,7 +164,7 @@ section {
   background: linear-gradient(0deg, #c7c7c7, #bacaba);
   color: #000000;
   animation: fadeInUp 1.7s ease;
-  border-bottom: none;
+  border: none;
 }
 
 .hero h1 {
