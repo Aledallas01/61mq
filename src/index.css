@@ -774,8 +774,8 @@ section {
   border: none;
   border-radius: 0.75rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  max-width: 100%;
+  width: 60%;
+  max-width: 60%;
   height: 350px;
 }
 
