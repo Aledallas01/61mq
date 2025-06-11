@@ -221,6 +221,7 @@ section {
 .site-footer {
   background-color: #cacaca;
   color: #000000;
+  border-top: #000000 1px solid;
   padding: 2rem 1rem 1rem;
   font-size: 0.9rem;
 }
