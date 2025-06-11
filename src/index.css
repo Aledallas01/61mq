@@ -28,8 +28,6 @@ body {
   color: #161616;
   line-height: 1.6;
   overflow-x: hidden;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 /* ANIMAZIONI */
@@ -148,6 +146,8 @@ nav a:hover::after {
 section {
   padding: 4rem 2rem;
   animation: fadeInUp 1s ease;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .section-title {
